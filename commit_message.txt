@@ -1,1 +1,1 @@
-Fix date format issue in handleStart function
+Initialize birthDate state with today's date

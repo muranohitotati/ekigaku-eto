@@ -242,7 +242,7 @@ const HexagramVisual = ({ lines, changingLines, lineValues, title }) => {
 export default function App() {
   console.log("App component rendered");
   const [screen, setScreen] = useState('start'); // start, processing, result
-  const [birthDate, setBirthDate] = useState('');
+  const [birthDate, setBirthDate] = useState(new Date().toISOString().slice(0, 10));
   const [selectedItem, setSelectedItem] = useState(null); // 選択された項目ID
   const [eto, setEto] = useState({ stem: '', branch: '' });
   const [hexagramData, setHexagramData] = useState(null);
