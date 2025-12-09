@@ -1,0 +1,1 @@
+Update script.js with new divination logic
