@@ -240,6 +240,7 @@ const HexagramVisual = ({ lines, changingLines, lineValues, title }) => {
 // --- Main App Component ---
 
 export default function App() {
+  console.log("App component rendered");
   const [screen, setScreen] = useState('start'); // start, processing, result
   const [birthDate, setBirthDate] = useState('');
   const [selectedItem, setSelectedItem] = useState(null); // 選択された項目ID
@@ -263,6 +264,7 @@ export default function App() {
   const handleStart = (e) => {
     e.preventDefault();
     if (!birthDate || !selectedItem) return;
+    console.log("handleStart called");
 
     const calculatedEto = calculateEto(birthDate);
     setEto(calculatedEto);
@@ -279,6 +281,7 @@ export default function App() {
         const data = castHexagramData();
         setHexagramData(data);
         setScreen('result');
+        console.log("State updated to result");
       }
     }, 400);
   };
