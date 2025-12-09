@@ -40,6 +40,15 @@
         <p>© 2024 天命易占堂 All rights reserved. 鑑定結果は一つの指標としてご活用ください。</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/lucide-react@0.292.0/dist/lucide.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="module" data-type="text/babel">
+      import App from './script.js';
+      const container = document.getElementById('main-content');
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
 </body>
 </html>

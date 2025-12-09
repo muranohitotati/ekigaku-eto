@@ -1,1 +1,1 @@
-Update script.js with new divination logic
+Fix rendering issue by using CDNs and updating script
