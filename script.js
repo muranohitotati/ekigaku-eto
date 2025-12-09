@@ -266,7 +266,8 @@ export default function App() {
     if (!birthDate || !selectedItem) return;
     console.log("handleStart called");
 
-    const calculatedEto = calculateEto(birthDate);
+    const formattedDate = new Date(birthDate).toISOString().slice(0, 10);
+    const calculatedEto = calculateEto(formattedDate);
     setEto(calculatedEto);
     
     setScreen('processing');
