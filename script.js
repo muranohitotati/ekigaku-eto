@@ -1,5 +1,5 @@
-const { useState } = React;
-const { Sparkles, Scroll, Moon, Sun, ArrowRight, RotateCcw, Briefcase, Zap, AlertTriangle, CheckCircle, Clock, Heart, DollarSign, Users, TrendingUp, Shield, Layers } = lucide;
+import React, { useState } from 'react';
+import { Sparkles, Scroll, Moon, Sun, ArrowRight, RotateCcw, Briefcase, Zap, AlertTriangle, CheckCircle, Clock, Heart, DollarSign, Users, TrendingUp, Shield, Layers } from 'lucide-react';
 
 // --- データ定義 ---
 
